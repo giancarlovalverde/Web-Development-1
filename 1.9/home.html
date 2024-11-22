@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homepage</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="author" content="Giancarlo Valverde">
+    <meta name="description" content="My website!">
+</head>
+
+<body>
+    <div class="container">
+        <header class="site-header">
+            <h1><a href="index.html">My Website</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="history.html">My Past</a></li>
+                    <li><a href="now.html">My Present</a></li>
+                    <li><a href="future.html">My Future</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section>
+                <header class="welcome-header">
+                    <h2>Welcome to my website!</h2>
+                </header>
+
+                <article>
+                    <header class="info-header">
+                        <h3>Information about me</h3>
+                    </header>
+                    <p>I speak various languages such as: Swedish, Spanish, and English.</p>
+                </article>
+
+                <article>
+                    <header class="info-header">
+                        <h3>My Favorite Quotes</h3>
+                    </header>
+                    <p>This makes a difference:</p>
+                    <blockquote>
+                        <mark>"It's not the goal, it's the path"</mark>
+                    </blockquote>
+                    <footer>- Confucius</footer>
+                </article>
+
+                <article>
+                    <header class="info-header">
+                        <h3>A Beautiful Song</h3>
+                    </header>
+                    <audio controls>
+                        <source src="../media/Laufey-From_The_Start.mp3" type="audio/mpeg">
+                        Your browser does not support the audio player.
+                    </audio>
+                </article>
+
+                <article>
+                    <header class="info-header">
+                        <h3>A Music Video</h3>
+                    </header>
+                    <video controls>
+                        <source src="../media/BAD_BUNNY-MONACO.mp4" type="video/mp4">
+                        Your browser does not support the video player.
+                    </video>
+                    <a href="videolink.html">Show in full screen!</a>
+                </article>
+
+                <article>
+                    <header class="info-header">
+                        <h3>My Favorite ASCII Art</h3>
+                    </header>
+                    <pre>
+                    .8 
+                    .888
+                  .8888'
+                 .8888'
+                 888'
+                 8'
+    .88888888888. .88888888888.
+ .8888888888888888888888888888888.
+.8888888888888888888888888888888888.
+.&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&'
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&'
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&'
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+`%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.
+`00000000000000000000000000000000000'
+`000000000000000000000000000000000'
+ `0000000000000000000000000000000'
+   `###########################'
+    `#######################'
+       `#########''########'
+         `""""""'  `"""""'
+                    </pre>
+                </article>
+
+                <article>
+                    <header class="info-header">
+                        <h3>Contact Me!</h3>
+                    </header>
+                    <form action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" method="post">
+                        <fieldset>
+                            <legend>About You</legend>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="First and last name" required autofocus title="Please enter both first and last name"><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required title="Please enter a valid email address"><br>
+
+                            <label for="website">Website:</label>
+                            <input type="url" id="website" name="website" placeholder="http://yourwebsite.com">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Communication</legend>
+                            <label for="response">Want a response:</label>
+                            <input type="checkbox" id="response" name="response"><br>
+
+                            <label>Copy of the message:</label>
+                            <input type="radio" id="copy_yes" name="copy" value="yes"><label for="copy_yes">Yes</label>
+                            <input type="radio" id="copy_no" name="copy" value="no" checked><label for="copy_no">No</label><br>
+
+                            <label for="subject">CV/Portfolio:</label>
+                            <select id="subject" name="subject" required title="Please choose a subject for your message">
+                                <option value="">Choose a subject...</option>
+                                <optgroup label="Subjects">
+                                    <option value="CV">CV</option>
+                                    <option value="portfolio">Portfolio</option>
+                                </optgroup>
+                            </select><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Message</legend>
+                            <label for="file">Upload file:</label>
+                            <input type="file" id="file" name="file"><br>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required placeholder="Write your message here" title="Write your message"></textarea><br>
+                        </fieldset>
+
+                        <input type="submit" value="Send">
+                    </form>
+                </article>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <p>Carlo likes exotic fruits</p>
+        </aside>
+
+        <footer class="site-footer">
+            <p>This website is developed by Giancarlo Valverde ©</p>
+            <p>Contact me at <a href="mailto:giancarlovalverde15@gmail.com">giancarlovalverde15@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
