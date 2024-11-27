@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>Video</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="author" content="Giancarlo Valverde">
+    <meta name="description" content="My website!">
+</head>
+
+<body>
+  <div id="videoContainer">
+      <video autoplay loop id="fullscreenVideo">
+         <!-- <source src= "a video" type="video/mp4">-->
+        Your browser does not support the video player.
+      </video>
+      
+      <div class="overlay">
+        <p>**Name of the video**</p>
+        <button id="overlayButton" onclick="playPauseVideo()" >Play</button>
+      </div>
+  </div>
+
+  <script>
+    var video = document.getElementById("fullscreenVideo");
+    var btn = document.getElementById("overlayButton");
+
+    function playPauseVideo() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+  </script>   
+  
+</body>
+</html>
