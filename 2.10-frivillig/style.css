@@ -1,0 +1,296 @@
+body {
+    font-family: "Montserrat", sans-serif; 
+    color: #000000; 
+    background-color: #ffffff; 
+    letter-spacing: 0.05em; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+    grid-template-columns: minmax(200px, 3fr) minmax(150px, 1fr);
+    grid-template-rows: auto 1fr auto; 
+    gap: 20px; 
+    padding: 10px;
+    box-sizing: border-box
+}
+
+
+.site-header{
+    grid-area: header;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.welcome-header{
+    grid-area: welcome;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    min-height: 10px; 
+    max-height: 30px; 
+}
+
+
+.info-header{
+    grid-area: info;
+    background-color: #6e9dcf;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    min-height: 10px; 
+    max-height: 30px; 
+}
+
+
+.main-content{
+    grid-area: main;
+    background-color: #f8f9fa;
+    padding: 20px;
+    transition: transform 0.3s ease; 
+}
+
+
+.main-content:hover {
+    transform: scale(1.02); 
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #e9ecef;
+    padding:10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.site-footer {
+    grid-area: footer;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.main-nav ul {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 70px;
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+
+
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+h2, h3 {
+    color: #ffffff; 
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+header{
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+}
+
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+}
+
+
+dl dt {
+    font-weight: bold; 
+    margin-top: 15px;  
+    margin-bottom: 5px; 
+}
+
+
+dl dd {
+    margin-left: 20px;  
+    margin-bottom: 10px; 
+}
+
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus {
+    width: 20%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+
+textarea {
+    background-image: url("../media/i.png"); 
+    background-position: left top; 
+    background-repeat:no-repeat ;
+    resize: none; 
+}
+  
+
+textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+
+a:link, a:visited {
+    color: #ffffff; 
+    text-decoration: none; 
+    cursor: pointer; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+    
+}
+
+
+a:hover {
+    color: #9ea7b1; 
+    text-decoration: underline; 
+    transform: scale(1.1); 
+}
+
+
+a:active {
+    color: #ffc107; 
+}
+
+
+.float-img {
+    float: left; 
+    margin-right: 20px; 
+    max-width: 60%; 
+}
+
+
+.float-img-clear {
+    clear: both; 
+}
+
+
+#videoContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+#videoContainer video {
+    width: 100%;
+    height: auto;
+}
+
+
+.overlay {
+    position: absolute; 
+    bottom: 10%;
+    left: 10%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 20px; 
+    border-radius: 8px;
+}
+
+
+#overlayButton{
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#overlayButton:hover {
+    background: #666; 
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 4fr 1fr; 
+        gap: 1em; 
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 1em; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        flex-direction: column; 
+    }
+
+    button, .btn {
+        background-color: #e63946; 
+    }
+
+    .main-content {
+        order: 1; 
+        width: 100%; 
+    }
+
+    .sidebar {
+        order: 2; 
+        width: 100%; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    header {
+        background: rgb(154, 214, 253); 
+    }
+
+    footer {
+        background: rgb(154, 214, 253); 
+    }
+}
+
+
+@media print {
+    header, footer, nav, aside, .non-printable {
+        display: none; 
+    }
+}

@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
 }
 
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -19,6 +20,7 @@ body {
     padding: 10px;
 }
 
+
 .site-header{
     grid-area: header;
     background-color: #007bff;
@@ -26,6 +28,7 @@ body {
     padding: 10px;
     text-align: center;
 }
+
 
 .welcome-header{
     grid-area: welcome;
@@ -37,6 +40,7 @@ body {
     max-height: 30px; 
 }
 
+
 .info-header{
     grid-area: info;
     background-color: #6e9dcf;
@@ -47,17 +51,20 @@ body {
     max-height: 30px; 
 }
 
+
 .main-content{
     grid-area: main;
     background-color: #f8f9fa;
     padding: 20px;
 }
 
+
 .sidebar {
     grid-area: sidebar;
     background-color: #e9ecef;
     padding:10px;
 }
+
 
 .site-footer {
     grid-area: footer;
@@ -66,6 +73,7 @@ body {
     padding: 10px;
     text-align: center;
 }
+
 
 .main-nav ul {
     align-items: center;
@@ -77,6 +85,7 @@ body {
     list-style:none;
 }
 
+
 h1{
     font-weight: bold;
     text-transform: uppercase;
@@ -84,16 +93,19 @@ h1{
     margin-bottom: 10px;
 }
 
+
 h2, h3 {
     color: #ffffff; 
     margin-top: 0;
     margin-bottom: 10px;
 }
 
+
 header{
     padding: 10px;
     margin-bottom:10px;
 }
+
 
 a:link {
     color: #ffffff; 
@@ -101,18 +113,22 @@ a:link {
     cursor: pointer; 
 }
 
+
 a:visited {
     color: #41484d; 
 }
+
 
 a:hover {
     color: #9ea7b1; 
     text-decoration: underline; 
 }
 
+
 a:active {
     color: #ffc107; 
 }
+
 
 @media screen and (min-width: 1200px) {
     .container{
@@ -152,6 +168,7 @@ table {
     }
 }
 
+
 @media screen and (max-width: 1024px) and (min-width: 1200px) {
     .container{
         grid-template-columns: 1fr;
@@ -187,6 +204,7 @@ table {
         table-layout: fixed;
     }
 }
+
 
 @media screen and (max-width: 1024px) and (min-width: 480px) {
     .container{
@@ -225,6 +243,7 @@ table {
         table-layout: fixed;
     }  
 }
+
 
 @media screen and (min-width: 100px) and (max-width: 480px) {
     .container{
@@ -268,6 +287,7 @@ table {
     }
 }
 
+
 @media screen and (max-width: 100px) {
     .container{
         max-width: 100vw;
@@ -300,6 +320,7 @@ table {
         height: auto;
     }
 }
+
 
 @media print {
     .container{

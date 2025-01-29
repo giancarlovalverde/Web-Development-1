@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
 }
 
+
 .container {
     height: 100vh;
     width: 100vw;
@@ -19,6 +20,7 @@ body {
     padding: 10px;
 }
 
+
 .site-header{
     grid-area: header;
     background-color: #007bff;
@@ -26,6 +28,7 @@ body {
     padding: 10px;
     text-align: center;
 }
+
 
 .welcome-header{
     grid-area: welcome;
@@ -36,6 +39,7 @@ body {
     min-height: 10px; 
     max-height: 30px; 
 }
+
 
 .info-header{
     grid-area: info;
@@ -77,6 +81,7 @@ body {
     list-style:none;
 }
 
+
 h1{
     font-weight: bold;
     text-transform: uppercase;
@@ -84,16 +89,19 @@ h1{
     margin-bottom: 10px;
 }
 
+
 h2, h3 {
     color: #ffffff; 
     margin-top: 0;
     margin-bottom: 10px;
 }
 
+
 header{
     padding: 10px;
     margin-bottom:10px;
 }
+
 
 table {
     width: 100%;
@@ -102,11 +110,13 @@ table {
     border: 1px solid #000000;
 }
 
+
 th, td {
     border: 1px solid #000000;
     padding: 10px;
     text-align: left;
 }
+
 
 dl dt {
     font-weight: bold; 
@@ -114,10 +124,12 @@ dl dt {
     margin-bottom: 5px; 
 }
 
+
 dl dd {
     margin-left: 20px;  
     margin-bottom: 10px; 
 }
+
 
 a:link {
     color: #ffffff; 
@@ -125,24 +137,29 @@ a:link {
     cursor: pointer; 
 }
 
+
 a:visited {
     color: #41484d; 
 }
+
 
 a:hover {
     color: #9ea7b1; 
     text-decoration: underline; 
 }
 
+
 a:active {
     color: #ffc107; 
 }
+
 
 .float-img {
     float: left; 
     margin-right: 20px; 
     max-width: 60%; 
 }
+
 
 .float-img-clear {
     clear: both; 
@@ -153,6 +170,7 @@ a:active {
     position: relative;
 }
 
+
 .overlay {
     position: absolute; 
     bottom: 10%;
@@ -161,7 +179,8 @@ a:active {
     color: white; 
     padding: 20px; 
     border-radius: 8px;
-  }
+}
+
 
 #overlayButton{
     padding: 10px 20px;
@@ -172,6 +191,7 @@ a:active {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 
 #overlayButton:hover {
     background: #666; 
@@ -200,6 +220,7 @@ a:active {
     }
 }
 
+
 @media screen and (max-width: 1024px) {
     .container{
         grid-template-columns: 1fr;
@@ -215,6 +236,7 @@ a:active {
         text-align: center;
     }
 }
+
 
 @media screen and (max-width: 768px) {
     .container {
@@ -232,6 +254,7 @@ a:active {
     }
 }
 
+
 @media screen and (max-width: 480px) {
     header {
         background-color: #007bff; 
@@ -242,10 +265,11 @@ a:active {
         text-align: center;
     }
 
+
 @media print {
     header, footer, nav, aside, .non-printable {
         display: none; 
     }
-}
+    }
 }
 
